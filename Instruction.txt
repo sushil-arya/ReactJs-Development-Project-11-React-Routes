@@ -1,0 +1,67 @@
+How we can dynamically load component with URL patterns?
+
+URL = Uniform Resource Locator
+
+The default URL of ReactJs Application is 
+
+this is a URL of React Application
+Base Address
+http://localhost:3000
+
+if we put '/' after base address then it is called Home Route
+Base Address/  -> /Home Route
+
+
+Base Address /someRoute
+
+Suppose I have to create 2 pages
+1. Login
+     http://localhost:3000/login
+2. Register
+      http://localhost:3000/register
+
+3. Home
+       http://localhost:3000
+
+
+
+ To load the Component Dynamically need to install 3rd Party library 'react-router-dom' with the help of npm
+
+react-router-dom 
+
+npm is download utility for nodejs application
+
+npm = node package manager
+
+npm install <somelibrary> -----> https://npmjs.com ---> download
+
+npm install react-router-dom --save
+
+
+------------------------------------------
+
+Folder Structure
+
+public/index.html (view file)
+src/index.js (login file)
+package.json
+
+npm start --> react-script-start --->  src/index.js --->>> WebPack (Bundler) --- Babel Js Compiler --- public/index.html
+
+
+React Router Dom (Structure of GrandParent > Parent > Child )
+
+BrowserRouter (Grand-Parent)
+         Routes (Parent)
+             Route (Child)
+
+<div id = "BrowserRouter">
+		<div id="Routes">
+                       <div id="route"></div>
+                </div>
+ </div>
+
+
+
+
+
