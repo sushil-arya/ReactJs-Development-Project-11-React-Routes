@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavBar from './NavBar'
 
 export class Login extends Component {
 
@@ -6,7 +7,8 @@ export class Login extends Component {
     render() {
         return (
             <div>
-                Login
+                    <h1>Login Page</h1>
+                    <NavBar />
             </div>
         )
     }
